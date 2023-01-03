@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes prediction</title>
+</head>
+
+<body background="https://images.pexels.com/photos/6941878/pexels-photo-6941878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" text=blue>
+    
+    <h1 align ="center" > 
+        <font face="Lato" size="8" color="red" >Diabetes Prediction</font>  
+    </h1>
+    <h3 align ="center" >
+        <font face="Book man old style" size="6" ><i>We care about your health </i></font>
+    </h3>
+    <form method="POST" action="/predict_diabetes">
+    <h4 align="center">
+        <font face="Lato" size="4" color="black">
+        
+        
+        <label>Glucose(range:20-199):</label>
+        <input type = "text" name = "Glucose">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>BloodPressure(range:40-120):</label>
+        <input type = "text" name = "BloodPressure">
+        </select>
+
+        <br>
+        <br>
+
+        <label>SkinThickness(range:10-99):</label>
+        <input type = "text" name = "SkinThickness">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Insulin(range:0-380):</label>
+        <input type = "text" name = "Insulin">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bmi(range:15-67):</label>
+        <input type = "text" name = "Bmi">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>DiabetesPedigreeFunction(range:0.1-2.4):</label>
+        <input type = "text" name = "DiabetesPedigreeFunction">
+        </select>
+        
+        <br>
+        <br>
+        
+        <label>Age(range:21-81):</label>
+        <input type = "text" name = "Age">
+        </select>
+        
+        <br>
+        <br>
+        </font>
+    </h4>   
+       <center>
+       
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+    <h5 align="center">
+        <font face="Lato" size="6" color="Maroon">
+        You have <b> {{ probability }} </b> chance of being diabetic 
+        </font>
+    </h5>
+    </form>
+
+
+</body>
+</html>
